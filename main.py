@@ -42,6 +42,7 @@ while playing:
         snake.extend()
         scoreboard.score += 1
         scoreboard.update_score()
+        food.color(food.random_color())
 
     # Detect collision with wall
     if (
@@ -58,5 +59,4 @@ while playing:
         if snake.head.distance(segment) < 10:
             playing = False
             scoreboard.end_game()
-
 screen.exitonclick()

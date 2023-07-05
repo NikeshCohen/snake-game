@@ -2,24 +2,25 @@
 
 This is a snake game written in Python using the Turtle graphics library. The game is played by using the arrow keys to move the snake around the screen. The goal of the game is to eat as many dots as possible without hitting the walls or the snake's own tail.
 
+Update v1.2: Added a new snake color, change shape of snake food to turtle. Each spawn of the food will be a random color from the color list.
+
+Future Updates: Increasing the speed of the game as it processes, adding event listeners to the WSAD Keys, generate a random RGB color rather than it being from a list
+
 ## How to play
 
-Start the game by running the snake.py file.
+Start the game by running the main.py file.
 Use the arrow keys to move the snake around the screen.
-Eat the dots to score points.
+Eat the turtle to score points.
 Be careful not to hit the walls or the snake's own tail.
 
 ## Requirements
 
 Turtle graphics library
-The Turtle graphics documentation: https://docs.python.org/3/library/turtle.html |
-If you want to install the graphics library, run the following command: pip install PythonTurtle
+The Turtle graphics documentation: https://docs.python.org/3/library/turtle.html | Turtle graphics comes preinstalled with python, if for some reason it is not, you can install the graphics library by running the following command: pip install PythonTurtle
 
 ## Running the game
 
-To run the game, you can use the following command:
-
-python main.py
+To run the game, you can use the following command: python main.py
 
 The game will be displayed in a new window. You can then use the arrow keys to move the snake around the screen and eat the apples.
 
