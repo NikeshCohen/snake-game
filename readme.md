@@ -4,7 +4,9 @@ This is a snake game written in Python using the Turtle graphics library. The ga
 
 Update v1.2: Added a new snake color, change shape of snake food to turtle. Each spawn of the food will be a random color from the color list.
 
-Future Updates: Increasing the speed of the game as it processes, adding event listeners to the WSAD Keys, generate a random RGB color rather than it being from a list
+Update v1.3: Added an event listener to 'Q' key in order to quit the game as well as adding event listeners to the WSAD keys to perform the same actions as the arrow keys. These event listeners are on ".onkeypress" rather then ".onkey" The program will no longer end the loop once the snake has dies, rather a new snake will be created and the game will continue until the user quits. The users high score is now saved to the "high_score.txt" file.
+
+Future Updates: Increasing the speed of the game as it processes, generate a random RGB color rather than it being from a list
 
 ## How to play
 
@@ -30,6 +32,7 @@ Up arrow key: Move the snake up.
 Down arrow key: Move the snake down.
 Left arrow key: Move the snake left.
 Right arrow key: Move the snake right.
+Q: To quit the game
 
 ## Tips
 
