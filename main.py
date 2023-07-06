@@ -27,10 +27,23 @@ game_state = Status()
 
 # Event Listeners
 screen.listen()
+
+# Up
 screen.onkeypress(snake.move_up, "Up")
+screen.onkeypress(snake.move_up, "w")
+
+# Down
 screen.onkeypress(snake.move_down, "Down")
+screen.onkeypress(snake.move_down, "s")
+
+# Left
 screen.onkeypress(snake.move_left, "Left")
+screen.onkeypress(snake.move_left, "a")
+
+# Right
 screen.onkeypress(snake.move_right, "Right")
+screen.onkeypress(snake.move_right, "d")
+
 screen.onkeypress(game_state.end_game, "q")
 
 
