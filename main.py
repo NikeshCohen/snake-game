@@ -2,7 +2,6 @@ from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 from turtle import Screen
-from game import Status
 import time
 
 # Screen Specifications
@@ -21,9 +20,6 @@ food = Food()
 # Creating the scoreboard from the Scoreboard object
 scoreboard = Scoreboard()
 scoreboard.update_score()
-
-# Creating the game state from Status object
-game_state = Status()
 
 # Event Listeners
 screen.listen()
@@ -44,11 +40,12 @@ screen.onkeypress(snake.move_left, "a")
 screen.onkeypress(snake.move_right, "Right")
 screen.onkeypress(snake.move_right, "d")
 
-screen.onkeypress(game_state.end_game, "q")
+# Quitting the game
+screen.onkeypress(scoreboard.end_game, "q")
 
 
 # Initialization of the game
-while game_state.playing:
+while scoreboard.playing:
     screen.update()
     time.sleep(0.1)
     snake.move()
