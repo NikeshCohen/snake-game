@@ -6,9 +6,11 @@ Update v1.2: Added a new snake color, change shape of snake food to turtle. Each
 
 Update v1.3: Added an event listener to 'Q' key in order to quit the game as well as adding event listeners to the WSAD keys to perform the same actions as the arrow keys. These event listeners are on ".onkeypress" rather then ".onkey" The program will no longer end the loop once the snake has dies, rather a new snake will be created and the game will continue until the user quits. The users high score is now saved to the "high_score.txt" file.
 
-Update v1.4: Found a fixed a bug relating to the saving of the users high score. The high score was only saved when the snake "dies" and not when the user quits the game. Removed the game class and added its methods to the to the scoreboard class
+Update v1.4: Found a fixed a bug relating to the saving of the users high score. The high score was only saved when the snake "dies" and not when the user quits the game. Removed the game class and added its methods to the scoreboard class
 
-Future Updates: Increasing the speed of the game as it processes, generate a random RGB color rather than it being from a list
+Update v1.5: A random RGB color is generated for the turtle color rather than it being from a list
+
+Future Updates: Increasing the speed of the game as it processes,
 
 ## How to play
 

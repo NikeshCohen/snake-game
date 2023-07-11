@@ -1,13 +1,14 @@
-from turtle import Turtle
+import turtle
 import random
 
 
-class Food(Turtle):
+class Food(turtle.Turtle):
     def __init__(self):
         super().__init__()
         self.penup()
         self.speed("fastest")
-        self.color("blue")
+        turtle.colormode(255)
+        self.color(self.random_color())
         self.shape("turtle")
         self.shapesize(stretch_len=0.8, stretch_wid=0.8)
         self.refresh()
@@ -18,31 +19,10 @@ class Food(Turtle):
         self.goto(random_x, random_y)
 
     def random_color(self):
-        self.COLOR_LIST = [
-            "blue",
-            "brown",
-            "cyan",
-            "darkcyan",
-            "darkgray",
-            "gray",
-            "indigo",
-            "lightgray",
-            "lime",
-            "magenta",
-            "maroon",
-            "navy",
-            "olive",
-            "orange",
-            "pink",
-            "purple",
-            "red",
-            "seagreen",
-            "skyblue",
-            "teal",
-            "white",
-            "yellow",
-        ]
+        red = random.randint(50, 255)
+        green = random.randint(50, 255)
+        blue = random.randint(50, 255)
 
-        color = random.choice(self.COLOR_LIST)
+        color_tuple = (red, green, blue)
 
-        return color
+        return color_tuple
